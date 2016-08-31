@@ -105,8 +105,8 @@ body {
     <form method="POST" action="DestinoEjercicio25.php"> 
         <input type="text" value="" placeholder="Lado Uno" id="LadoUno" name="LadoUno"/>
         <input type="text" value="" placeholder="Lado Dos" id="LadoDos" name="LadoDos"/>
-        <input type="submit" value="Enviar"> 
-        <!-- <button>Enviar</button> -->
+        <!-- <input type="submit" value="Enviar">  -->
+        <button>Enviar</button>
     </form> 
 
 <?php 
@@ -116,7 +116,6 @@ if (isset($_POST["LadoUno"]) && isset($_POST["LadoDos"])) { //CON ISSET VALIDO Q
     $_superficie = $_POST["LadoUno"] * $_POST["LadoDos"];
     echo "<br><br>La superficie es: $_superficie";
 }
-
 
 
  ?>

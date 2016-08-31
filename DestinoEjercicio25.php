@@ -108,18 +108,14 @@ body {
 
 <?php 
 
-
-if (isset($_POST["LadoUno"]) && isset($_POST["LadoDos"])) { //CON ISSET VALIDO QUE LA VARIABLE NO ESTÉ VACÍA.
-    $_superficie = $_POST["LadoUno"] * $_POST["LadoDos"];
-    echo "<br>$_superficie<br><br>";
-
-}
-
-
-
+    if (isset($_POST["LadoUno"]) && isset($_POST["LadoDos"])) { //CON ISSET VALIDO QUE LA VARIABLE NO ESTÉ VACÍA.
+        $_superficie = $_POST["LadoUno"] * $_POST["LadoDos"];
+        echo "<br>$_superficie<br><br>";
+    }
  ?>
- <a href="http://localhost:8080/ClaseTres/login.php" >Ir a la página anterior</a>
- 
+
+ <button><a href="http://localhost:8080/ClaseTres/login.php"  title="Ir a la página anterior">Ir a la página anterior</a></button>
+
 </div>
 </body>
 
