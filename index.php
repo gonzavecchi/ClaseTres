@@ -4,7 +4,7 @@
 </head>
 <body>
 
-<form method="POST" action="Destino.php"> 
+<form method="POST" > 
 	<input type="Text" name="Mensaje">
 	<input type="submit">
 
