@@ -101,12 +101,9 @@ body {
 
 <div class="logo"></div>
 <div class="login-block">
-    <h1>Ingrese Lados de un Rectángulo</h1>
-    <form method="POST" action="DestinoEjercicio25.php"> 
-        <input type="text" value="" placeholder="Lado Uno" id="LadoUno" name="LadoUno"/>
-        <input type="text" value="" placeholder="Lado Dos" id="LadoDos" name="LadoDos"/>
-        <input type="submit" value="Enviar"> 
-        <!-- <button>Enviar</button> -->
+    <h1>La superficie del rectángulo es:</h1>
+    <form method="POST" > 
+    
     </form> 
 
 <?php 
@@ -114,7 +111,7 @@ body {
 
 if (isset($_POST["LadoUno"]) && isset($_POST["LadoDos"])) { //CON ISSET VALIDO QUE LA VARIABLE NO ESTÉ VACÍA.
     $_superficie = $_POST["LadoUno"] * $_POST["LadoDos"];
-    echo "<br><br>La superficie es: $_superficie";
+    echo "<br>$_superficie";
 }
 
 
