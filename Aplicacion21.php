@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Aplicacion Nro. 21</title>
+	<title>Aplicacion Nro. 22</title>
 	<style>
 table, th, td {
     border: 1px solid black;
@@ -12,20 +12,26 @@ th, td {
 </style>
 </head>
 <body>
-<h1>Aplicacion Nro. 21</h1>
+<h1>Aplicacion Nro. 22</h1>
 
 <table style="width:25%">
 
 
  <?php
- $fila = 5;
- $columna = 3;
+ $fila = 6;
+ $columna = 4;
 
-  for($t=0;$t<$fila;$t++){
-  echo "<tr>";
-  for($y=0;$y<$columna;$y++){
+  for($t=1;$t<$fila;$t++){
+    
+    if ($t%2==0){
+      echo "<tr style=background-color:#FFFFFF;>"; /*pares*/
+    }else{
+      echo "<tr style=background-color:#BDBDBD;>"; /*impares*/
+    }  
+
+   for($y=1;$y<$columna;$y++){
      echo "<td>".$y.":".$t."</td>";
-   }
+    }
    echo "</tr>";
   }
  ?>
