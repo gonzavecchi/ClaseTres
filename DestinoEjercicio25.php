@@ -114,7 +114,7 @@ body {
     }
  ?>
 
- <button><a href="http://localhost:8080/ClaseTres/login.php"  title="Ir a la página anterior">Ir a la página anterior</a></button>
+ <button><a href="http://localhost/ClaseTres/login.php"  title="Ir a la página anterior">Ir a la página anterior</a></button>
 
 </div>
 </body>
